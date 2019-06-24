@@ -1,14 +1,26 @@
 {
   "name": "superscrapper",
   "version": "1.0.0",
-  "description": "",
+  "description": "Recurcively install dependencies and sub-dep/cies for defined nested level and directory",
   "main": "index.js",
   "scripts": {
+    "installer": "node ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Yorgos Kakavas",
+  "author": {
+    "name": "Yorgos Kakavas",
+    "email": "georgis.kakavas@gmail.com"
+  },
   "license": "ISC",
   "dependencies": {
     "commander": "^2.20.0"
-  }
+  },
+  "keywords": [
+    "installall",
+    "installer",
+    "dependency",
+    "sub-dependecies",
+    "recurcive",
+    "script"
+  ]
 }

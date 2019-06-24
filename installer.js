@@ -35,7 +35,7 @@ const getNextDirectory = () => {
         return parentDir;
     }
     else {
-        console.log('END PROCESS');
+        console.log('END PROCESS. Installed packages: ', installedPackages);
         process.exit();
     }
 };
