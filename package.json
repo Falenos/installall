@@ -1,5 +1,5 @@
 {
-  "name": "superscrapper",
+  "name": "installall",
   "version": "1.0.0",
   "description": "Recurcively install dependencies and sub-dep/cies for defined nested level and directory",
   "main": "index.js",
