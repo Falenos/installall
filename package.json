@@ -1,5 +1,5 @@
 {
-  "name": "installall",
+  "name": "installator",
   "version": "1.0.0",
   "description": "Recurcively install dependencies and sub-dep/cies for defined nested level and directory",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
-    "name": "Yorgos Kakavas",
+    "name": "falenos",
     "email": "georgis.kakavas@gmail.com"
   },
   "license": "ISC",
@@ -22,5 +22,9 @@
     "sub-dependecies",
     "recurcive",
     "script"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Falenos/installator.git"
+  }
 }
