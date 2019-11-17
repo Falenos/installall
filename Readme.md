@@ -79,7 +79,7 @@ Also delete the node_modules of your specified `root dir` before and after usage
 * Richer output
 
 ## Contributions
-I would very much appreciate any code contributions. Either to solve our limitations
+I would very much appreciate any [code](https://github.com/Falenos/installator) contributions. Either to solve our limitations or create more features.
 
 ## License
 
