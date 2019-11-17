@@ -35,12 +35,14 @@ const getNextDirectory = () => {
         return parentDir;
     }
     else {
-        console.log('END PROCESS. Installed packages: ', installedPackages);
+        console.log('END PROCESS. Installed packages of: ', installedPackages);
         process.exit();
     }
 };
 
 const installAll = (dir, isRoot, allowedDepth) => {
+
+    // console.log(dir, isRoot, allowedDepth);
 
     if(allowedDepth) {
         ALLOWED_DEPTH = allowedDepth;
@@ -67,7 +69,7 @@ const installAll = (dir, isRoot, allowedDepth) => {
     // console.log('hasPackageJson', hasPackageJson);
     // console.log('hasModules', hasModules);
 
-    if (!alreadyInstalled && hasPackageJson && !hasModules) {
+    if (!alreadyInstalled && hasPackageJson && (!hasModules || isRoot)) {
         return runInstall()
             .then(() => {
                 // storeDependencies()
@@ -93,9 +95,10 @@ const installAll = (dir, isRoot, allowedDepth) => {
                 goToNextDirectory();
             });
     }
-    else {
-        return goToNextDirectory();
+    else if (isRoot) {
+        return;
     }
+    return goToNextDirectory();
 }
 
 module.exports = {
