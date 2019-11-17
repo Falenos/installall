@@ -1,6 +1,6 @@
 {
   "name": "installator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Recurcively install dependencies and sub-dep/cies for defined nested level and directory",
   "main": "index.js",
   "scripts": {
