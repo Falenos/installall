@@ -28,18 +28,19 @@ You can use either a npm script or import the default function and run it.
 
 ```bash
 "scripts": {
-    "installator": "node 'node_modules/installator' -i 'do it' -r <dirname> -d 2"
+    "installator": "node 'node_modules/installator' -i -r <dirname> -d 2"
 }
 
 Options:
   -i, --install
-  Whatever truthy value here. Required.
+  Required. Boolean param, no value needed just the `-i` part
 
   -r, --root
   The root directory that contains your package.json
 
   -d, --depth
-  The depth of the dependencies and sub dep/cies that you need installed. Default value is 1 (same result as npm i from root)
+  The depth of the dependencies and sub dep/cies that you need installed.
+  Default value is 1 (same result as npm i from root)
 
 ```
 
@@ -74,7 +75,7 @@ There are packages out there that have as dependency an older version of themsel
 Also delete the node_modules of your specified `root dir` before and after usage
 
 ## Features to come
-* User specified parallel threads
+* User specified amount of parallel threads
 * Pre-install and Post-install callbacks
 * Richer output
 
